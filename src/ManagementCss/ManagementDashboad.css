@@ -1,0 +1,140 @@
+/* ManagementDashboard.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+  }
+  
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+  }
+  
+  /* Header */
+  .dashboard-header {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2b2b3c;
+    border-bottom: 1px solid #444;
+    z-index: 10;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: #3a3a4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #505070;
+  }
+  
+  /* Side Panel */
+  .dashboard-side-panel {
+    background-color: #2b2b3c;
+    border-right: 1px solid #444;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .side-panel-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .side-panel-button {
+    padding: 10px 15px;
+    background-color: #3a3a4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .side-panel-button:hover {
+    background-color: #505070;
+  }
+  
+  /* Main Section */
+  .dashboard-main {
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .main-overview {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .overview-card {
+    background-color: #3a3a4f;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .overview-card h3 {
+    margin-top: 0;
+  }
+  
+  .koi-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .main-details {
+    background-color: #2b2b3c;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .details-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .details-table th, .details-table td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .details-table th {
+    background-color: #3a3a4f;
+  }
+  
+  .details-table tbody tr:nth-child(even) {
+    background-color: #2b2b3c;
+  }
+  
+  .details-table tbody tr:nth-child(odd) {
+    background-color: #3a3a4f;
+  }
+  
